@@ -1,0 +1,329 @@
+/* ==========================================
+   GOOGLE FONT
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/* ==========================================
+   ROOT VARIABLES
+========================================== */
+
+:root{
+
+    /* Primary Colors */
+
+    --primary:#6366F1;
+    --primary-light:#818CF8;
+    --primary-dark:#4F46E5;
+
+    /* Success */
+
+    --success:#10B981;
+
+    /* Danger */
+
+    --danger:#EF4444;
+
+    /* Warning */
+
+    --warning:#F59E0B;
+
+    /* Info */
+
+    --info:#0EA5E9;
+
+    /* Background */
+
+    --bg-color:#F8FAFC;
+
+    --sidebar-bg:#0F172A;
+
+    --card-bg:#FFFFFF;
+
+    --table-bg:#FFFFFF;
+
+    /* Text */
+
+    --text-dark:#1E293B;
+
+    --text-light:#64748B;
+
+    --white:#FFFFFF;
+
+    /* Borders */
+
+    --border:#E2E8F0;
+
+    /* Category Colors */
+
+    --food:#F97316;
+
+    --shopping:#EC4899;
+
+    --travel:#3B82F6;
+
+    --salary:#22C55E;
+
+    --health:#EF4444;
+
+    --education:#8B5CF6;
+
+    --entertainment:#F59E0B;
+
+    --transport:#06B6D4;
+
+    --bills:#64748B;
+
+    --investment:#10B981;
+
+    --other:#94A3B8;
+
+    /* Fonts */
+
+    --font-family:'Poppins',sans-serif;
+
+    --font-xs:12px;
+
+    --font-sm:14px;
+
+    --font-md:16px;
+
+    --font-lg:20px;
+
+    --font-xl:24px;
+
+    --font-xxl:34px;
+
+    /* Font Weight */
+
+    --fw-light:300;
+
+    --fw-normal:400;
+
+    --fw-medium:500;
+
+    --fw-semibold:600;
+
+    --fw-bold:700;
+
+    /* Radius */
+
+    --radius-sm:8px;
+
+    --radius-md:12px;
+
+    --radius-lg:18px;
+
+    --radius-xl:24px;
+
+    --radius-round:50%;
+
+    /* Shadows */
+
+    --shadow-sm:
+    0 2px 8px rgba(0,0,0,.05);
+
+    --shadow-md:
+    0 10px 30px rgba(0,0,0,.08);
+
+    --shadow-lg:
+    0 18px 40px rgba(0,0,0,.12);
+
+    /* Transition */
+
+    --transition:.30s ease;
+
+    /* Sidebar */
+
+    --sidebar-width:270px;
+
+    /* Navbar */
+
+    --navbar-height:80px;
+
+    /* Card */
+
+    --card-padding:24px;
+
+    /* Gaps */
+
+    --gap-xs:8px;
+
+    --gap-sm:12px;
+
+    --gap-md:20px;
+
+    --gap-lg:30px;
+
+    --gap-xl:40px;
+
+}
+
+
+/* ==========================================
+   DARK THEME
+========================================== */
+
+body.dark{
+
+    --bg-color:#0F172A;
+
+    --sidebar-bg:#020617;
+
+    --card-bg:#1E293B;
+
+    --table-bg:#1E293B;
+
+    --text-dark:#F8FAFC;
+
+    --text-light:#CBD5E1;
+
+    --border:#334155;
+
+}
+
+
+/* ==========================================
+   GLOBAL RESET VARIABLES
+========================================== */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+/* ==========================================
+   HTML
+========================================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+/* ==========================================
+   BODY
+========================================== */
+
+body{
+
+    font-family:var(--font-family);
+
+    background:var(--bg-color);
+
+    color:var(--text-dark);
+
+    transition:var(--transition);
+
+}
+
+
+/* ==========================================
+   LINKS
+========================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+/* ==========================================
+   LISTS
+========================================== */
+
+ul{
+
+    list-style:none;
+
+}
+
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+button{
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font-family:inherit;
+
+    transition:var(--transition);
+
+}
+
+
+/* ==========================================
+   INPUT
+========================================== */
+
+input,
+select,
+textarea{
+
+    font-family:inherit;
+
+    outline:none;
+
+}
+
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+
+/* ==========================================
+   SCROLLBAR
+========================================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:var(--bg-color);
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--primary-dark);
+
+}

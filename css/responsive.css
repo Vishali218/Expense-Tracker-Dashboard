@@ -1,0 +1,584 @@
+/* ===================================================
+   RESPONSIVE.CSS
+   Expense Tracker Dashboard
+=================================================== */
+
+/* ==============================================
+   Large Desktop (1400px and below)
+============================================== */
+
+@media screen and (max-width:1400px){
+
+.cards{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.chart-section{
+
+    grid-template-columns:1fr;
+
+}
+
+}
+
+/* ==============================================
+   Laptop (1200px and below)
+============================================== */
+
+@media screen and (max-width:1200px){
+
+.main-content{
+
+    padding:25px;
+
+}
+
+.sidebar{
+
+    width:240px;
+
+}
+
+.main-content{
+
+    margin-left:240px;
+
+}
+
+.navbar h1{
+
+    font-size:28px;
+
+}
+
+.chart-card canvas{
+
+    height:300px !important;
+
+}
+
+}
+
+/* ==============================================
+   Tablet Landscape (992px)
+============================================== */
+
+@media screen and (max-width:992px){
+
+.sidebar{
+
+    width:85px;
+
+    padding:20px 12px;
+
+}
+
+.logo h2{
+
+    display:none;
+
+}
+
+.menu li{
+
+    justify-content:center;
+
+}
+
+.menu li span{
+
+    display:none;
+
+}
+
+.menu li i{
+
+    margin:0;
+
+    font-size:20px;
+
+}
+
+.monthly-card{
+
+    display:none;
+
+}
+
+.main-content{
+
+    margin-left:85px;
+
+}
+
+.cards{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.chart-section{
+
+    grid-template-columns:1fr;
+
+}
+
+.table-card{
+
+    overflow-x:auto;
+
+}
+
+}
+
+/* ==============================================
+   Tablet Portrait (768px)
+============================================== */
+
+@media screen and (max-width:768px){
+
+.sidebar{
+
+    position:fixed;
+
+    left:-280px;
+
+    width:260px;
+
+    height:100vh;
+
+    transition:.3s;
+
+}
+
+.sidebar.active{
+
+    left:0;
+
+}
+
+.logo h2{
+
+    display:block;
+
+}
+
+.menu li{
+
+    justify-content:flex-start;
+
+}
+
+.main-content{
+
+    margin-left:0;
+
+    padding:20px;
+
+}
+
+.navbar{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+.nav-right{
+
+    width:100%;
+
+    justify-content:space-between;
+
+}
+
+.cards{
+
+    grid-template-columns:1fr;
+
+}
+
+.chart-section{
+
+    grid-template-columns:1fr;
+
+}
+
+.chart-card canvas{
+
+    height:250px !important;
+
+}
+
+#expenseForm{
+
+    grid-template-columns:1fr;
+
+}
+
+.table-wrapper{
+
+    overflow-x:auto;
+
+}
+
+table{
+
+    min-width:750px;
+
+}
+
+.menu-toggle{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.search-box{
+
+    width:100%;
+
+}
+
+.search-box input{
+
+    width:100%;
+
+}
+
+}
+
+/* ==============================================
+   Mobile (576px)
+============================================== */
+
+@media screen and (max-width:576px){
+
+.main-content{
+
+    padding:15px;
+
+}
+
+.navbar{
+
+    padding:18px;
+
+}
+
+.navbar h1{
+
+    font-size:24px;
+
+}
+
+.navbar p{
+
+    font-size:13px;
+
+}
+
+.card{
+
+    padding:20px;
+
+}
+
+.card h2{
+
+    font-size:28px;
+
+}
+
+.card i{
+
+    width:50px;
+
+    height:50px;
+
+    font-size:20px;
+
+}
+
+.chart-card{
+
+    padding:18px;
+
+}
+
+.chart-card h3{
+
+    font-size:17px;
+
+}
+
+.transaction-form{
+
+    padding:18px;
+
+}
+
+.table-card{
+
+    padding:18px;
+
+}
+
+.toast{
+
+    left:15px;
+
+    right:15px;
+
+    min-width:auto;
+
+}
+
+.modal-content{
+
+    width:95%;
+
+    padding:25px;
+
+}
+
+.fab{
+
+    width:55px;
+
+    height:55px;
+
+    right:20px;
+
+    bottom:20px;
+
+}
+
+}
+
+/* ==============================================
+   Small Mobile (420px)
+============================================== */
+
+@media screen and (max-width:420px){
+
+.main-content{
+
+    padding:12px;
+
+}
+
+.navbar{
+
+    border-radius:12px;
+
+}
+
+.card{
+
+    border-radius:15px;
+
+}
+
+.chart-card{
+
+    border-radius:15px;
+
+}
+
+.transaction-form{
+
+    border-radius:15px;
+
+}
+
+.table-card{
+
+    border-radius:15px;
+
+}
+
+.profile{
+
+    width:40px;
+
+    height:40px;
+
+}
+
+#themeBtn{
+
+    width:40px;
+
+    height:40px;
+
+}
+
+.icon-btn{
+
+    width:40px;
+
+    height:40px;
+
+}
+
+button{
+
+    font-size:14px;
+
+}
+
+input,
+
+select{
+
+    font-size:14px;
+
+}
+
+}
+
+/* ==============================================
+   Landscape Mobile
+============================================== */
+
+@media screen and (max-height:500px){
+
+.sidebar{
+
+    overflow-y:auto;
+
+}
+
+.monthly-card{
+
+    display:none;
+
+}
+
+}
+
+/* ==============================================
+   Sidebar Overlay
+============================================== */
+
+.sidebar-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,.4);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:998;
+
+}
+
+.sidebar-overlay.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+/* ==============================================
+   Smooth Transition
+============================================== */
+
+.sidebar,
+
+.main-content,
+
+.card,
+
+.chart-card,
+
+.transaction-form,
+
+.table-card{
+
+    transition:all .3s ease;
+
+}
+
+/* ==============================================
+   Utility Responsive Classes
+============================================== */
+
+.hide-mobile{
+
+    display:block;
+
+}
+
+.show-mobile{
+
+    display:none;
+
+}
+
+@media(max-width:768px){
+
+.hide-mobile{
+
+    display:none !important;
+
+}
+
+.show-mobile{
+
+    display:block !important;
+
+}
+
+}
+
+/* ==============================================
+   Responsive Table
+============================================== */
+
+.table-wrapper::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.table-wrapper::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:10px;
+
+}
+
+/* ==============================================
+   Responsive Chart Container
+============================================== */
+
+.chart-container{
+
+    width:100%;
+
+    overflow:hidden;
+
+}
+
+/* ==============================================
+   End of File
+============================================== */
